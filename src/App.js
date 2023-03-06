@@ -1,12 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
+import Header from './components/Header';
 import Home from './components/Home';
+import SignUp from './components/SignUp'
+import SignIn from './components/SignIn'
 import './App.scss'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+		<Header />
+		<Navbar />
 		<Router basename='gsit-project'>
 			<Routes>
 				<Route exact path='/' element={ <Home />} />

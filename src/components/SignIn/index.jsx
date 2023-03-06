@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { sign_in } from './sign_in'
 import './styles.scss'
 
 
 const SignIn = () => {
 
     const [data, setData] = useState({})
+    let nav = useNavigate()
 
     useEffect(() => {
         setData({
@@ -42,7 +45,14 @@ const SignIn = () => {
                         />
                 </label>
 
-                <button>Log in</button>
+                <button
+                    onClick={e => {
+                        e.preventDefault()
+                        sign_in(data.username)
+                        nav('/')
+                    }}>
+                    Log in
+                </button>
 
                 <div className="footer">
                     Don't have an account? 

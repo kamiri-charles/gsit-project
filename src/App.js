@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
+import Home from './components/Home';
 import './App.scss'
-import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-		<Router>
+		<Router basename='gsit-project'>
 			<Routes>
 				<Route exact path='/' element={ <Home />} />
-				<Route exact path='/sign-in' element={ <SignIn /> } />
-				<Route exact path='/sign-up' element={ <SignUp /> } />
+				<Route path='/sign-in' element={ <SignIn /> } />
+				<Route path='/sign-up' element={ <SignUp /> } />
 			</Routes>
 		</Router>
     </div>

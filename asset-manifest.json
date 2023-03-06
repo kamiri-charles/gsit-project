@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gsit-project/static/css/main.cbd79750.css",
+    "main.js": "/gsit-project/static/js/main.4eec6f44.js",
+    "index.html": "/gsit-project/index.html",
+    "main.cbd79750.css.map": "/gsit-project/static/css/main.cbd79750.css.map",
+    "main.4eec6f44.js.map": "/gsit-project/static/js/main.4eec6f44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbd79750.css",
+    "static/js/main.4eec6f44.js"
+  ]
+}

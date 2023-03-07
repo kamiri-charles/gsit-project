@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gsit-project/static/css/main.4d467dad.css",
-    "main.js": "/gsit-project/static/js/main.3ad9ce55.js",
+    "main.css": "/gsit-project/static/css/main.adb5f223.css",
+    "main.js": "/gsit-project/static/js/main.13b6d361.js",
     "index.html": "/gsit-project/index.html",
-    "main.4d467dad.css.map": "/gsit-project/static/css/main.4d467dad.css.map",
-    "main.3ad9ce55.js.map": "/gsit-project/static/js/main.3ad9ce55.js.map"
+    "main.adb5f223.css.map": "/gsit-project/static/css/main.adb5f223.css.map",
+    "main.13b6d361.js.map": "/gsit-project/static/js/main.13b6d361.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d467dad.css",
-    "static/js/main.3ad9ce55.js"
+    "static/css/main.adb5f223.css",
+    "static/js/main.13b6d361.js"
   ]
 }

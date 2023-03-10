@@ -1,23 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
-import Home from './components/Home';
 import SignUp from './components/SignUp'
 import SignIn from './components/SignIn'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import { useNavbar } from './utils/navbar_utils'
 import './App.scss'
 
 function App() {
-  return (
-    <div className="App">
-		<Header />
-		<Router basename='gsit-project'>
-			<Routes>
-				<Route exact path='/' element={ <Home />} />
-				<Route path='/sign-in' element={ <SignIn /> } />
-				<Route path='/sign-up' element={ <SignUp /> } />
-			</Routes>
-		</Router>
-    </div>
-  );
+	const { isNavOpen, toggleNav } = useNavbar();
+
+	return (
+		<div className="App">
+			<Header toggleNav={toggleNav} />
+			<Router basename='gsit-project'>
+				<Routes>
+					<Route path='/sign-in' element={ <SignIn /> } />
+					<Route path='/sign-up' element={ <SignUp /> } />
+					<Route exact path='/' element={ [<Navbar isNavOpen={isNavOpen} toggleNav={toggleNav} />, <Home />]} />
+				</Routes>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

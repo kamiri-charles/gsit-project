@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from 'react-router-dom' 
-import Navbar from '../Navbar'
 import './styles.scss'
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
 
     return (
         <div className="home">
-		    <Navbar />
             Welcome {user}!
         </div>
     )

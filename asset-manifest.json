@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/gsit-project/static/css/main.adb5f223.css",
-    "main.js": "/gsit-project/static/js/main.13b6d361.js",
+    "main.css": "/gsit-project/static/css/main.b2e7b9f6.css",
+    "main.js": "/gsit-project/static/js/main.f8083d7d.js",
+    "static/media/boxicons.svg": "/gsit-project/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/boxicons.eot": "/gsit-project/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/gsit-project/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/gsit-project/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/boxicons.woff2": "/gsit-project/static/media/boxicons.df635aaf04cd75132f62.woff2",
     "index.html": "/gsit-project/index.html",
-    "main.adb5f223.css.map": "/gsit-project/static/css/main.adb5f223.css.map",
-    "main.13b6d361.js.map": "/gsit-project/static/js/main.13b6d361.js.map"
+    "main.b2e7b9f6.css.map": "/gsit-project/static/css/main.b2e7b9f6.css.map",
+    "main.f8083d7d.js.map": "/gsit-project/static/js/main.f8083d7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.adb5f223.css",
-    "static/js/main.13b6d361.js"
+    "static/css/main.b2e7b9f6.css",
+    "static/js/main.f8083d7d.js"
   ]
 }

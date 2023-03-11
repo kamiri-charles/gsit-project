@@ -2,12 +2,12 @@ import './styles.scss'
 import 'boxicons/css/boxicons.min.css'
 
 
-const Header = ({toggleNav}) => {
+const Header = ({isNavOpen, toggleNav}) => {
     return (
         <div className="header">
-            Header
+            <span className="header-title">TROPICAL HEAT LTD.</span>
 
-            <i class='bx bx-menu' onClick={toggleNav}></i>
+            <i className={!isNavOpen ? 'bx bx-menu' : 'bx bx-x'} onClick={toggleNav}></i>
         </div>
     )
 }

@@ -12,10 +12,17 @@
     justify-content: center;
     z-index: 99;
 
+    .header-title {
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
     i {
         font-size: 30px;
         position: absolute;
         left: 30px;
         cursor: pointer;
+        transition: all 0.3s ease-in;
     }
 }

@@ -10,12 +10,12 @@ const Navbar = ({isNavOpen, toggleNav}) => {
                 <div className="brand">
 
                     <div className="brand-image">
-                        {/* Image goes here */}
+                        <img src={require("../../dev_assets/tropical_heat_img.jpeg")} alt="Tropical Heat" />
                     </div>
 
                     <div className="brand-meta">
-                        <div className="brand-name">Test Brand Name</div>
-                        <div className="brand-email">abc123@gmail.com</div>
+                        <div className="brand-name">Tropical Heat Ltd.</div>
+                        <div className="brand-email">crp@tropicalheat.co.ke</div>
                     </div>
 
                 </div>
@@ -27,27 +27,29 @@ const Navbar = ({isNavOpen, toggleNav}) => {
                     </div>
                     
                     <div className="link">
-                        <i class='bx bxs-arrow-from-right'></i>
+                        <i className='bx bxs-arrow-from-right'></i>
                         Check-out
                     </div>
 
                     <div className="link">
-                        <i class='bx bxs-store'></i>
+                        <i className='bx bxs-store'></i>
                         Outlets
                     </div>
 
                     <div className="link">
-                        <i class='bx bx-wallet'></i>
+                        <i className='bx bx-wallet'></i>
                         My Sales
                     </div>
 
                     <div className="link">
-                        <i class='bx bx-log-out'></i>
+                        <i className='bx bx-log-out'></i>
                         Logout
                     </div>
                 </div>
             </div>
-            <div className="right" /* onClick={toggleNav} */></div>
+            <div className="right" onClick={() => {
+                if (isNavOpen) toggleNav();
+            }}></div>
         </div>
     )
 }

@@ -12,12 +12,14 @@ function App() {
 
 	return (
 		<div className="App">
-			<Header toggleNav={toggleNav} />
+			<Header isNavOpen={isNavOpen} toggleNav={toggleNav} />
 			<Router basename='gsit-project'>
 				<Routes>
 					<Route path='/sign-in' element={ <SignIn /> } />
 					<Route path='/sign-up' element={ <SignUp /> } />
-					<Route exact path='/' element={ [<Navbar isNavOpen={isNavOpen} toggleNav={toggleNav} />, <Home />]} />
+					<Route exact path='/' element={ [
+					<Navbar isNavOpen={isNavOpen} toggleNav={toggleNav} key='navbar' />,
+					<Home key='home' />]} />
 				</Routes>
 			</Router>
 		</div>

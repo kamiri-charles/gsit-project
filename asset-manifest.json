@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/gsit-project/static/css/main.b2e7b9f6.css",
-    "main.js": "/gsit-project/static/js/main.f8083d7d.js",
+    "main.css": "/gsit-project/static/css/main.442120a5.css",
+    "main.js": "/gsit-project/static/js/main.fb096b56.js",
     "static/media/boxicons.svg": "/gsit-project/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/gsit-project/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
     "static/media/boxicons.woff": "/gsit-project/static/media/boxicons.d12afc36557395143e4b.woff",
     "static/media/boxicons.ttf": "/gsit-project/static/media/boxicons.db9ddb1898dbd76badca.ttf",
     "static/media/boxicons.woff2": "/gsit-project/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/tropical_heat_img.jpeg": "/gsit-project/static/media/tropical_heat_img.3f2d2551c9a3306f822e.jpeg",
     "index.html": "/gsit-project/index.html",
-    "main.b2e7b9f6.css.map": "/gsit-project/static/css/main.b2e7b9f6.css.map",
-    "main.f8083d7d.js.map": "/gsit-project/static/js/main.f8083d7d.js.map"
+    "main.442120a5.css.map": "/gsit-project/static/css/main.442120a5.css.map",
+    "main.fb096b56.js.map": "/gsit-project/static/js/main.fb096b56.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2e7b9f6.css",
-    "static/js/main.f8083d7d.js"
+    "static/css/main.442120a5.css",
+    "static/js/main.fb096b56.js"
   ]
 }

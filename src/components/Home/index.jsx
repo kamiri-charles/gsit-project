@@ -9,7 +9,6 @@ const Home = () => {
     let nav = useNavigate()
 
     useEffect(() => {
-        console.log(user)
         let userUUID = JSON.parse(localStorage.getItem('user'))?.uuid;
 
         if (userUUID) {
@@ -23,6 +22,7 @@ const Home = () => {
 
     return (
         <div className="home">
+            {console.log(user)}
 
             <div className="shop">
                 <div className="name">Bismillahi Gen Shop</div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from 'react-router-dom' 
+import { fetch_user } from "../../utils/user_utils"
 import './styles.scss'
 
 const Home = () => {
@@ -8,8 +9,15 @@ const Home = () => {
     let nav = useNavigate()
 
     useEffect(() => {
-        let user = localStorage.getItem('user')
-        user ? setUser(user) : nav('/sign-in')
+        let userUUID = JSON.parse(localStorage.getItem('user'))?.uuid;
+
+        if (userUUID) {
+            let data = fetch_user(userUUID);
+            data ? setUser(data) : nav('/sign-in');
+        } else {
+            nav('/sign-in');
+        }
+
     }, [nav])
 
     return (

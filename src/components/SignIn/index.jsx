@@ -48,8 +48,7 @@ const SignIn = () => {
                 <button
                     onClick={e => {
                         e.preventDefault()
-                        sign_in(data.username)
-                        nav('/')
+                        sign_in(data, nav)
                     }}>
                     Log in
                 </button>

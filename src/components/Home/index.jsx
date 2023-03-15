@@ -9,6 +9,7 @@ const Home = () => {
     let nav = useNavigate()
 
     useEffect(() => {
+        console.log(user)
         let userUUID = JSON.parse(localStorage.getItem('user'))?.uuid;
 
         if (userUUID) {

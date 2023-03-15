@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gsit-project/static/css/main.442120a5.css",
-    "main.js": "/gsit-project/static/js/main.fb096b56.js",
+    "main.js": "/gsit-project/static/js/main.c49c0624.js",
     "static/media/boxicons.svg": "/gsit-project/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/gsit-project/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
     "static/media/boxicons.woff": "/gsit-project/static/media/boxicons.d12afc36557395143e4b.woff",
@@ -10,10 +10,10 @@
     "static/media/tropical_heat_img.jpeg": "/gsit-project/static/media/tropical_heat_img.3f2d2551c9a3306f822e.jpeg",
     "index.html": "/gsit-project/index.html",
     "main.442120a5.css.map": "/gsit-project/static/css/main.442120a5.css.map",
-    "main.fb096b56.js.map": "/gsit-project/static/js/main.fb096b56.js.map"
+    "main.c49c0624.js.map": "/gsit-project/static/js/main.c49c0624.js.map"
   },
   "entrypoints": [
     "static/css/main.442120a5.css",
-    "static/js/main.fb096b56.js"
+    "static/js/main.c49c0624.js"
   ]
 }

@@ -1,8 +1,16 @@
-import './styles.scss'
+import { useNavigate } from 'react-router-dom'
 import 'boxicons/css/boxicons.min.css'
+import './styles.scss'
 
 
 const Navbar = ({isNavOpen, toggleNav}) => {
+
+    let nav = useNavigate();
+
+    const sign_out = () => {
+        localStorage.clear()
+        nav('/sign-in')
+    }
 
     return (
         <div id='navbar' className={isNavOpen ? '' : 'inactive'}>
@@ -41,9 +49,9 @@ const Navbar = ({isNavOpen, toggleNav}) => {
                         My Sales
                     </div>
 
-                    <div className="link">
+                    <div className="link" onClick={sign_out}>
                         <i className='bx bx-log-out'></i>
-                        Logout
+                        Sign Out
                     </div>
                 </div>
             </div>

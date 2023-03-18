@@ -9,7 +9,7 @@ const AgentView = () => {
     useEffect(() => {
         (async () => {
             let user = JSON.parse(localStorage.getItem('user'))
-            fetch(`http://localhost:8000/api/agents/${user.uuid}/merchants/`)
+            fetch(`https://kamiri-gsit-project.azurewebsites.net/api/agents/${user.uuid}/merchants/`)
             .then(res => res.json())
             .then(data => setMerchants(data))
 

@@ -27,7 +27,7 @@ const Home = () => {
         }
 
         (async () => {
-            fetch(`http://localhost:8000/api/members/${userUUID}/type/`)
+            fetch(`https://kamiri-gsit-project.azurewebsites.net/api/members/${userUUID}/type/`)
             .then(res => res.json())
             .then(data => setUserType(data))
         }) ()

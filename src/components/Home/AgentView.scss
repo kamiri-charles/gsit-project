@@ -3,32 +3,48 @@
     flex-wrap: wrap;
 
     .merchant {
-        padding: 20px 40px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 10px;
+        width: 300px;
+        background: white;
+        border-radius: 5px;
         margin: 20px;
+        padding: 5px;
+        cursor: pointer;
+        overflow: hidden;
 
-        /* &:hover {
-            background: red;
-        } */
 
         .s_1 {
             display: flex;
+            padding: 20px;
+            color: white;
+        border-radius: 5px;
+
+
+            background: black;
 
             .profile-img {
-                width: 45px;
-                height: 45px;
+                color: black;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 text-align: center;
-                font-size: 40px;
+                font-size: 45px;
                 overflow: hidden;
-                background: #e6ff04;
+                background: var(--ui-theme);
                 margin-right: 20px;
+            }
+
+            .username, .email {
+                font-style: italic;
+            }
+            
+            .email {
+                font-size: 15px;
             }
         }
 
         .s_2 {
-            margin-block: 20px;
+            padding: 20px;
+
         }
     }
 }

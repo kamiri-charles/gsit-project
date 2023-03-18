@@ -18,8 +18,8 @@ const AgentView = () => {
 
     return (
       <div className="agent-view">
-        {merchants.map((merchant) => (
-          <div className="merchant">
+        {merchants.map(merchant => (
+          <div className="merchant" key={merchant.id}>
             <div className="s_1">
               <div className="profile-img">
                 <i className="bx bx-user"></i>

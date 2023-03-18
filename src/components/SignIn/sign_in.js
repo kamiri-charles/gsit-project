@@ -11,7 +11,6 @@ export const sign_in = async (credentials, nav) => {
   })
   .then(res => res.json())
   .then(data => {
-    console.log(data)
     localStorage.setItem('user', JSON.stringify(data))
     nav('/');
 })

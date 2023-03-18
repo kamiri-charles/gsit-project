@@ -19,10 +19,18 @@
     }
 
     i {
-        font-size: 30px;
+        background: var(--ui-theme);
+        border-radius: 50%;
+        font-size: 20px;
+        padding: 5px;
         position: absolute;
         left: 30px;
         cursor: pointer;
-        transition: all 0.3s ease-in;
+        color: black;
+        transition: all 0.5 ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }

@@ -9,10 +9,15 @@ button, a, input {
   border: none;
 }
 
+:root {
+  --ui-theme: #e6ff04;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  background: blue;
+  background: #8b8b8b;
+
 }
 
 #root {

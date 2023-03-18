@@ -5,19 +5,23 @@ import MerchantView from "./MerchantView"
 import AgentView from "./AgentView"
 import { MetroSpinner } from "react-spinners-kit"
 import './styles.scss'
+import SubHeader from "./SubHeader"
 
 const Home = () => {
 
-    const [user, setUser] = useState()
+    //const [user, setUser] = useState()
     const [userType, setUserType] = useState()
     let nav = useNavigate()
+
 
     useEffect(() => {
         let userUUID = JSON.parse(localStorage.getItem('user'))?.uuid;
 
         if (userUUID) {
-            let data = fetch_user(userUUID);
-            data ? setUser(data) : nav('/sign-in');
+            fetch_user(userUUID).then(data => {
+                if (!data) nav('/sign-in')
+            })
+
         } else {
             nav('/sign-in');
         }
@@ -32,64 +36,13 @@ const Home = () => {
 
     return (
         <div className="home">
-
-            {userType === 'merchant' ? <MerchantView /> : userType === 'agent' ? <AgentView /> : <MetroSpinner />}
-
-            {/* <div className="shop">
-                <div className="name">Bismillahi Gen Shop</div>
-                <div className="loc">Salgaa</div>
-                <div className="sub-loc">
-                    Near Kobil Petro Station, <br />
-                    Nairobi, <br />
-                    Kenya
-                </div>
-                <div className="distance">Distance: 1000km</div>
-            </div>
-
-            <div className="shop">
-                <div className="name">Bismillahi Gen Shop</div>
-                <div className="loc">Salgaa</div>
-                <div className="sub-loc">
-                    Near Kobil Petro Station, <br />
-                    Nairobi, <br />
-                    Kenya
-                </div>
-                <div className="distance">Distance: 1000km</div>
-            </div>
-
-            <div className="shop">
-                <div className="name">Bismillahi Gen Shop</div>
-                <div className="loc">Salgaa</div>
-                <div className="sub-loc">
-                    Near Kobil Petro Station, <br />
-                    Nairobi, <br />
-                    Kenya
-                </div>
-                <div className="distance">Distance: 1000km</div>
-            </div>
-
-            <div className="shop">
-                <div className="name">Bismillahi Gen Shop</div>
-                <div className="loc">Salgaa</div>
-                <div className="sub-loc">
-                    Near Kobil Petro Station, <br />
-                    Nairobi, <br />
-                    Kenya
-                </div>
-                <div className="distance">Distance: 1000km</div>
-            </div>
-
-            <div className="shop">
-                <div className="name">Bismillahi Gen Shop</div>
-                <div className="loc">Salgaa</div>
-                <div className="sub-loc">
-                    Near Kobil Petro Station, <br />
-                    Nairobi, <br />
-                    Kenya
-                </div>
-                <div className="distance">Distance: 1000km</div>
-            </div> */}
-
+            <SubHeader />
+            {
+            userType === 'merchant' ?
+                <MerchantView /> :
+                userType === 'agent' ?
+                <AgentView /> : <MetroSpinner color='#000' />
+            }
         </div>
     )
 }

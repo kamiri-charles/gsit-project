@@ -6,7 +6,7 @@ const SubHeader = () => {
 
         <div className="right">
           <div className="searchbar">
-            <input type="text" placeholder="Username, name or email." />
+            <input type="text" placeholder="Search" />
             <i className="bx bx-search"></i>
           </div>
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 100vw;
     position: absolute;
     top: 100px;
@@ -11,6 +11,8 @@
     .eRRlHf {
         position: fixed;
         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .sub-header {
@@ -28,8 +30,12 @@
 
         .right {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end;
             width: 50%;
+
+            * {
+                margin-inline: 10px;
+            }
 
             .searchbar {
                 background: white;

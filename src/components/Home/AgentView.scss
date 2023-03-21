@@ -1,7 +1,7 @@
 .agent-view {
     display: flex;
     flex-wrap: wrap;
-
+    
     .merchant {
         width: 300px;
         background: white;
@@ -9,18 +9,18 @@
         margin: 20px;
         padding: 5px;
         cursor: pointer;
-        overflow: hidden;
-
-
+        overflow: hidden;        
+        
+        
         .s_1 {
             display: flex;
             padding: 20px;
             color: white;
-        border-radius: 5px;
-
-
+            border-radius: 5px;
+            
+            
             background: black;
-
+            
             .profile-img {
                 color: black;
                 width: 50px;
@@ -32,7 +32,7 @@
                 background: var(--ui-theme);
                 margin-right: 20px;
             }
-
+            
             .username, .email {
                 font-style: italic;
             }
@@ -41,10 +41,10 @@
                 font-size: 15px;
             }
         }
-
+        
         .s_2 {
             padding: 20px;
-
+            
         }
     }
 }

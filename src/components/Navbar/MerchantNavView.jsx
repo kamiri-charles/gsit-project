@@ -21,11 +21,7 @@ const MerchantNavView = ({ data, toggleNav, isNavOpen }) => {
     <div className="left">
       <div className="top">
         <div className="image">
-          {data?.merchant.image ? (
-            <img src={data.merchant.image} alt="" />
-          ) : (
             <i className="bx bx-user"></i>
-          )}
         </div>
         <div className="meta">
           <div className="email">{data?.email}</div>

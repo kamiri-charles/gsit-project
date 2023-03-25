@@ -16,16 +16,16 @@
     }
 
     .sub-header {
-        background: rgb(78, 78, 78);
+        background: var(--ui-lighter-primary);
         width: 100%;
         padding: 20px;
         display: flex;
+        color: var(--ui-white);
 
         .left {
             font-size: 20px;
             font-weight: 600;
             width: 50%;
-            color: var(--ui-theme);
         }
 
         .right {
@@ -38,7 +38,7 @@
             }
 
             .searchbar {
-                background: white;
+                background: var(--ui-white);
                 border-radius: 5px;
                 display: flex;
                 align-items: center;

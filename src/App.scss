@@ -12,13 +12,17 @@ button, a, input {
 }
 
 :root {
-  --ui-theme: #e6ff04;
+  --ui-primary-theme: #201E1F;
+  --ui-lighter-primary: #3E3C3D;
+  --ui-secondary-theme: #50B2C0;
+  --ui-tertiary-theme: #FF4000;
+  --ui-white: #FEEFDD;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, gray, var(--ui-theme));
+  background: var(--ui-secondary-theme);
   //background-repeat:  no-repeat;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './AgentView.scss'
-import "boxicons/css/boxicons.min.css"
 
 
 const AgentView = () => {
@@ -39,6 +38,7 @@ const AgentView = () => {
           </div>
         ))}
       </div>
+      
     );
 }
 

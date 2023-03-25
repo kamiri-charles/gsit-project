@@ -25,7 +25,7 @@
         .top {
             width: 100%;
             height: 30%;
-            background: var(--ui-theme);
+            background: var(--ui-secondary-theme);
             color: black;
             display: flex;
             flex-direction: column;
@@ -38,7 +38,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: #000;
+                background: var(--ui-primary-theme);
                 border-radius: 50%;
                 margin-inline: 20px;
                 overflow: hidden;
@@ -50,7 +50,7 @@
                 }
 
                 i {
-                    color: white;
+                    color: var(--ui-white);
                     font-size: 50px;
                 }
             }
@@ -58,9 +58,6 @@
             .meta {
                 margin: 20px;
                 
-                /*    .brand-name {
-                    
-                } */
                 
                 .email {
                     font-size: 12px;
@@ -86,7 +83,7 @@
                 
                 &:hover {
                     border-radius: 10px;
-                    background: var(--ui-theme);
+                    background: var(--ui-secondary-theme);
                     color: black;
 
                     i {
@@ -97,14 +94,14 @@
                 i {
                     font-size: 30px;
                     margin-right: 30px;
-                    color: var(--ui-theme);
+                    color: var(--ui-secondary-theme);
                     transition: all 0.3s ease;
 
                 }
 
                 &.active {
                     border-radius: 10px;
-                    background: var(--ui-theme);
+                    background: var(--ui-secondary-theme);
                     color: black;
 
                     i {
@@ -114,10 +111,14 @@
             }
 
             .logout {
-                border-top: 1px solid yellow;
+                border-top: 1px solid var(--ui-white);
                 position: absolute;
                 bottom: 20px;
                 width: 280px;
+
+                &:hover {
+                    border: none;
+                }
             }
         }
         

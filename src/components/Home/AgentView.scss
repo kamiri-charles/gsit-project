@@ -4,7 +4,7 @@
     
     .merchant {
         width: 300px;
-        background: white;
+        background: var(--ui-white);
         border-radius: 5px;
         margin: 20px;
         padding: 5px;
@@ -15,21 +15,21 @@
         .s_1 {
             display: flex;
             padding: 20px;
-            color: white;
+            color: var(--ui-white);
             border-radius: 5px;
             
             
-            background: black;
+            background: var(--ui-primary-theme);
             
             .profile-img {
-                color: black;
+                color: var(--ui-primary-theme);
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
                 text-align: center;
                 font-size: 45px;
                 overflow: hidden;
-                background: var(--ui-theme);
+                background: var(--ui-secondary-theme);
                 margin-right: 20px;
             }
             

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import AgentNavView from './AgentNavView'
 import MerchantNavView from './MerchantNavView'
 import { fetch_user } from '../../utils/user_utils'
-import 'boxicons/css/boxicons.min.css'
 import './styles.scss'
 
 

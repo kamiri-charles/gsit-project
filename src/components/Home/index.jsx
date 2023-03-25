@@ -4,12 +4,11 @@ import { fetch_user } from "../../utils/user_utils"
 import MerchantView from "./MerchantView"
 import AgentView from "./AgentView"
 import { MetroSpinner } from "react-spinners-kit"
-import './styles.scss'
 import SubHeader from "./SubHeader"
+import './styles.scss'
 
 const Home = () => {
 
-    //const [user, setUser] = useState()
     const [userType, setUserType] = useState()
     let nav = useNavigate()
 

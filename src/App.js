@@ -5,6 +5,7 @@ import SignIn from "./components/SignIn";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import { useNavbar } from "./utils/navbar_utils";
+import "boxicons/css/boxicons.min.css"
 import "./App.scss";
 
 function App() {

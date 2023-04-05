@@ -2,7 +2,7 @@ export const fetch_user = async (uuid) => {
     let user_data;
 
     try {
-        const res = await fetch(`https://kamiri-gsit-project.azurewebsites.net/api/members/${uuid}/`);
+        const res = await fetch(`http://localhost:8000/api/members/${uuid}/`);
         user_data = await res.json();
 
     } catch (error) {

@@ -4,13 +4,22 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: var(--ui-primary-theme);
-    color: var(--ui-white);
+    background: var(--ui-white);
+    color: var(--ui-black);
+    padding-inline: 20px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     z-index: 99;
+    transition: all 0.3s ease;
+
+    &.window-scrolled {
+        background: var(--ui-black);
+        color: var(--ui-white);
+        transition: all 0.3s ease;
+    }
+
 
     .header-title {
         font-weight: 600;
@@ -19,13 +28,10 @@
     }
 
     i {
-        background: var(--ui-white);
-        color: var(--ui-primary-theme);
         border-radius: 50%;
-        font-size: 20px;
+        font-size: 25px;
         padding: 5px;
-        position: absolute;
-        left: 30px;
+        margin-inline: 30px;
         cursor: pointer;
         transition: all 0.5 ease;
 

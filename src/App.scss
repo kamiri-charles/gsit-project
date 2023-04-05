@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 button, a, input {
@@ -12,17 +13,17 @@ button, a, input {
 }
 
 :root {
-  --ui-primary-theme: #201E1F;
-  --ui-lighter-primary: #3E3C3D;
-  --ui-secondary-theme: #50B2C0;
-  --ui-tertiary-theme: #FF4000;
-  --ui-white: #FEEFDD;
+  --primary: #92DCE5;
+  --secondary: #D64933;
+  --ui-black: #000;
+  --ui-white: #EEE5E9;
+  --ui-gray: #7C7C7C;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background: var(--ui-secondary-theme);
+  background: var(--ui-white);
   //background-repeat:  no-repeat;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;

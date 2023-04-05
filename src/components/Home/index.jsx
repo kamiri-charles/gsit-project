@@ -26,7 +26,7 @@ const Home = () => {
         }
 
         (async () => {
-            fetch(`https://kamiri-gsit-project.azurewebsites.net/api/members/${userUUID}/type/`)
+            fetch(`http://localhost:8000/api/members/${userUUID}/type/`)
             .then(res => res.json())
             .then(data => setUserType(data))
         }) ()
@@ -35,7 +35,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <SubHeader />
+            {/* <SubHeader /> */}
             {
             userType === 'merchant' ?
                 <MerchantView /> :

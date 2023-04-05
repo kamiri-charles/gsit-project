@@ -1,0 +1,19 @@
+.merchant-view {
+    display: flex;
+    flex-wrap: wrap;
+
+    .dashboard {
+        padding: 20px;
+
+        .dashcard {
+            padding: 20px 40px;
+            background: var(--secondary);
+            border-radius: 20px;
+
+            .title {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

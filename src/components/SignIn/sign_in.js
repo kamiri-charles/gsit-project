@@ -1,7 +1,7 @@
 import Cookies from "js-cookie";
 
 export const sign_in = async (credentials, nav) => {
-  fetch("https://kamiri-gsit-project.azurewebsites.net/api/sign-in/", {
+  fetch("http://localhost:8000/api/sign-in/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

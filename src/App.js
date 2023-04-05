@@ -21,7 +21,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
 
           <Route
-            exact
+          exact
             path="/"
             element={[
               <Navbar
@@ -32,6 +32,7 @@ function App() {
               <Home key="home" />,
             ]}
           />
+
         </Routes>
       </Router>
     </div>

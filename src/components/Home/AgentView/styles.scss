@@ -1,6 +1,21 @@
 .agent-view {
     display: flex;
     flex-wrap: wrap;
+
+    .dashboard {
+        padding: 20px;
+
+        .dashcard {
+            padding: 20px 40px;
+            background: var(--secondary);
+            border-radius: 20px;
+
+            .title {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     
     .merchant {
         width: 300px;
@@ -9,7 +24,9 @@
         margin: 20px;
         padding: 5px;
         cursor: pointer;
-        overflow: hidden;        
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        
         
         
         .s_1 {
@@ -19,17 +36,16 @@
             border-radius: 5px;
             
             
-            background: var(--ui-primary-theme);
+            background: var(--ui-gray);
             
             .profile-img {
-                color: var(--ui-primary-theme);
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
                 text-align: center;
                 font-size: 45px;
                 overflow: hidden;
-                background: var(--ui-secondary-theme);
+                background: var(--ui-black);
                 margin-right: 20px;
             }
             
